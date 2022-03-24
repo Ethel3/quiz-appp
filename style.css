@@ -19,3 +19,14 @@ h2{
     font-size: 4.2rem;
     margin-bottom: 4rem;
 }
+
+.container{
+    width: 100Vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
