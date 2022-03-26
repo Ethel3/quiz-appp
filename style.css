@@ -38,3 +38,12 @@ h2{
 justify-content: center;
 align-items: center;
 }
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
