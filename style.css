@@ -56,4 +56,9 @@ align-items: center;
     text-decoration: none;
     color: rgb(28, 26, 26);
     background: linear-gradient(90deg, rgb(18, 92, 255) 0% rgb(0, 102, 255) 100%);
+    border-radius: 4px;
+}
+.btn:hover{
+    cursor: pointer;
+    box-sizing: 0 0.4rem 1.4rem 0 rgba;
 }
