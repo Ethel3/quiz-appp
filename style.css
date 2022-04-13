@@ -69,3 +69,6 @@ align-items: center;
     box-shadow: none;
     transform: none;
 }
+#highscore-btn {
+    background: linear-gradient(90deg, rgb(225, 247, 9) 0% rgb(240, 221, 6) 100%)
+}
