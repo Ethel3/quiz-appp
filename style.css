@@ -71,4 +71,7 @@ align-items: center;
 }
 #highscore-btn {
     background: linear-gradient(90deg, rgb(225, 247, 9) 0% rgb(240, 221, 6) 100%)
-}
+    }
+    #highscore-btn:hover{
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(225,225,0,0.5);
+    }
