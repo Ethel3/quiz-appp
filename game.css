@@ -26,6 +26,13 @@ body{
     padding: 2rem;
     width: 100%;
 }
+
+.correct {
+    background: linear-gradient(32deg, rgba(11, 223, 36));
+}
 @media screen and (max-width: 768px) {
-    
+    .choice-container{
+        min-width: 48rem;
+    }
+
 }
