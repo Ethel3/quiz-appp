@@ -36,6 +36,11 @@ body{
     background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(224, 11, 11, 1) 100%);
 }
 
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-width: 768px) {
     .choice-container{
         min-width: 48rem;
