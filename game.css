@@ -28,8 +28,14 @@ body{
 }
 
 .correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36));
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
 }
+
+
+.incorrect {
+    background: linear-gradient(32deg, rgba(11, 223, 36) 0%, rgb(41, 232, 111) 100%);
+}
+
 @media screen and (max-width: 768px) {
     .choice-container{
         min-width: 48rem;
