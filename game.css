@@ -55,6 +55,14 @@ body{
     height: 3rem;
     border: 0.2rem solid rgba(11, 223, 36);
     margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
 }
 
 @media screen and (max-width: 768px) {
