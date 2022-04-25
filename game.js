@@ -21,16 +21,16 @@ let questions = [
     },
 
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '31',
-        choice4: '5',
-        answer: 2,
+        question: 'Who is the current president of USA?',
+        choice1: 'Barak Obama',
+        choice2: 'Donald Trump',
+        choice3: 'Joe Biden ',
+        choice4: 'Queen Elizabeth',
+        answer: 3,
     },
 
     {
-        question: 'What is 2 + 2?',
+        question: '?',
         choice1: '2',
         choice2: '4',
         choice3: '31',
