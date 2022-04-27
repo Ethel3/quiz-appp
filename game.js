@@ -56,3 +56,11 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 }
+getNewQuestion = (){
+    if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS){
+        localStorage.setItems('mostRecentScore', score)
+
+        return window.location.assign('/end.html')
+        
+    }
+}
