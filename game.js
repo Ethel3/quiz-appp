@@ -78,7 +78,14 @@ getNewQuestion = () =>{
         choice.innerText = currentQuestion ['choice' + number]
     })
     
-    availableQuestions.splice{questionsIndex, 1}
+    availableQuestions.splice(questionIndex, 1)
 
     acceptingAnswers = true
 }
+
+choices.forEach(choice => {
+   choice.addEventListener ('click', e=>{
+       if(!acceptingAnswers) return
+       acceptingAnswers
+   })
+})
