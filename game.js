@@ -63,4 +63,10 @@ getNewQuestion = (){
         return window.location.assign('/end.html')
         
     }
+
+    questionCounter++
+    progressText.InnerText = 'Question ${questionCounter} of ${MAX_QUESTION}'
+    progressBarFull.style.width = '${(questionCounter/MAX_QUESTIONS) * 100}%'
+
+    
 }
