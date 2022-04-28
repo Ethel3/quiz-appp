@@ -56,7 +56,7 @@ startGame = () => {
     availableQuestions = [...questions]
     getNewQuestion()
 }
-getNewQuestion = (){
+getNewQuestion = () =>{
     if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS){
         localStorage.setItems('mostRecentScore', score)
 
@@ -68,5 +68,8 @@ getNewQuestion = (){
     progressText.InnerText = 'Question ${questionCounter} of ${MAX_QUESTION}'
     progressBarFull.style.width = '${(questionCounter/MAX_QUESTIONS) * 100}%'
 
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
     
 }
