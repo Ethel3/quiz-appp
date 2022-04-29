@@ -107,5 +107,15 @@ align-items: center;
     }
 
     #end-text{
+        font-size: 2.4rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    #saveScoreBtn{
+        border: none;
+    }
+
+    .fa-home{
         
     }
