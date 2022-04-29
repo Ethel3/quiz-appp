@@ -79,3 +79,9 @@ align-items: center;
         font-size: 2.5rem;
         margin-left: 1rem;
     }
+    .end-form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
