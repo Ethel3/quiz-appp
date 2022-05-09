@@ -1,3 +1,8 @@
+const fetchQuestions = async (num) => {
+    url = `https://opentdb.com/api.php?amount=${num}&category=9&difficulty=hard&type=multiple`
+    
+}
+
 let questions = [
     {
         question: 'What is 2 + 2?',
@@ -23,6 +28,94 @@ let questions = [
         choice2: 'PPP',
         choice3: 'CPP',
         choice4: 'NDC',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: '',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
+        answer: 1,
+    },
+    {
+        question: 'what is the name of the Tallest Mountain in Ghana?',
+        choice1: 'Mount Afadja',
+        choice2: 'Mount Aduada',
+        choice3: 'Mount Atiwiredu',
+        choice4: 'Mount Kwamisa',
         answer: 1,
     },
     {
