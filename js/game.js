@@ -15,10 +15,21 @@ let availableQuestions = {}
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
 
-startGame = () => {
+
+const fetchQuestions = async (num) => {
+    url = `https://opentdb.com/api.php?amount=${num}&category=9&difficulty=hard&type=multiple`
+    let response = await fetch(url);
+    let data = await response.json()
+    return data.results
+}
+startGame = async() => {
+    let questions = await fetchQuestions(50)
+    // return
     questionCounter = 0
     score = 0
-    availableQuestions = [...questions]
+    availableQuestions = [... questions]
+    
+    console.log(availableQuestions);
     getNewQuestion()
 }
 getNewQuestion = () =>{
@@ -35,14 +46,16 @@ getNewQuestion = () =>{
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]
-    question.innerText = currentQuestion.question
+    console.log(currentQuestion);
+    question.innerHTML = currentQuestion.question
 
-
-    for (let i = 0; i < choices.length; i++) {
-        const choice = choices[i]
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion ['choice' + number]
-        
+    const answerIndex = Math.floor(Math.random() * currentQuestion.incorrect_answers.length)
+    console.log(currentQuestion.correct_answer, answerIndex);
+    currentQuestion.incorrect_answers.splice(answerIndex, 0, currentQuestion.correct_answer)
+    console.log(currentQuestion.incorrect_answers);
+    for (let i = 0; i < currentQuestion.incorrect_answers.length; i++) {
+        choices[i].setAttribute('data', `number: ${i}`)
+        choices[i].innerHTML =currentQuestion.incorrect_answers[i]
     }
     
     availableQuestions.splice(questionIndex, 1)
@@ -56,10 +69,10 @@ for (let i = 0; i < choices.length; i++) {
         if(!acceptingAnswers) return
         
         acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
- 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct':'incorrect'
+        const selectedChoice = e
+        console.log(selectedChoice);
+        const selectedAnswer = selectedChoice.dataset.number
+        let classToApply = selectedAnswer == (answerIndex-1) ? 'correct':'incorrect'
  
  
         if(classToApply === 'correct') {
