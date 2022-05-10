@@ -3,7 +3,6 @@
 //     url = `https://opentdb.com/api.php?amount=${num}&category=9&difficulty=hard&type=multiple`
 //     let response = await fetch(url);
 //     let data = await response.json()
-//     // console.log(data.results);
 //     questions = data.results
 // }
 
