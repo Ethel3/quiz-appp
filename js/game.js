@@ -13,7 +13,8 @@ let availableQuestions = {}
 
 
 const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
+const MAX_QUESTIONS = 10
+let ANSWERINDEX = 0
 
 
 const fetchQuestions = async (num) => {
@@ -49,12 +50,12 @@ getNewQuestion = () =>{
     console.log(currentQuestion);
     question.innerHTML = currentQuestion.question
 
-    const answerIndex = Math.floor(Math.random() * currentQuestion.incorrect_answers.length)
-    console.log(currentQuestion.correct_answer, answerIndex);
-    currentQuestion.incorrect_answers.splice(answerIndex, 0, currentQuestion.correct_answer)
-    console.log(currentQuestion.incorrect_answers);
+    ANSWERINDEX = Math.floor(Math.random() * currentQuestion.incorrect_answers.length)
+    // console.log(currentQuestion.correct_answer, ANSWERINDEX);
+    currentQuestion.incorrect_answers.splice(ANSWERINDEX, 0, currentQuestion.correct_answer)
+    // console.log(currentQuestion.incorrect_answers);
     for (let i = 0; i < currentQuestion.incorrect_answers.length; i++) {
-        choices[i].setAttribute('data', `number: ${i}`)
+        choices[i].dataset['number'] = i;
         choices[i].innerHTML =currentQuestion.incorrect_answers[i]
     }
     
@@ -69,10 +70,11 @@ for (let i = 0; i < choices.length; i++) {
         if(!acceptingAnswers) return
         
         acceptingAnswers = false
-        const selectedChoice = e
-        console.log(selectedChoice);
-        const selectedAnswer = selectedChoice.dataset.number
-        let classToApply = selectedAnswer == (answerIndex-1) ? 'correct':'incorrect'
+        const selectedChoice = e.target
+        // console.log(selectedChoice.target.dataset.number); return;
+        const selectedAnswerIndex = selectedChoice.dataset.number
+        // console.log(selectedAnswerIndex);
+        let classToApply = selectedAnswerIndex == (ANSWERINDEX) ? 'correct':'incorrect'
  
  
         if(classToApply === 'correct') {
