@@ -30,7 +30,7 @@ startGame = async() => {
     score = 0
     availableQuestions = [... questions]
     
-    console.log(availableQuestions);
+    // console.log(availableQuestions);
     getNewQuestion()
 }
 getNewQuestion = () =>{
