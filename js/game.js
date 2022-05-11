@@ -24,7 +24,7 @@ const fetchQuestions = async (num) => {
     return data.results
 }
 startGame = async() => {
-    let questions = await fetchQuestions(50)
+    let questions = await fetchQuestions(500)
     // return
     questionCounter = 0
     score = 0
