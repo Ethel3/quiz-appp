@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    background-color:  rgb(29, 26, 26);
+    background-color:  rgb(1, 66, 151);
 }
 *{
     box-sizing: border-box;
@@ -114,6 +114,13 @@ align-items: center;
 
     #saveScoreBtn{
         border: none;
+        background-color: aqua;
+        cursor: pointer;
+    }
+    #saveScoreBtn:disabled{
+        border: none;
+        background-color: rgba(0, 22, 51, 0.541);
+        cursor: not-allowed;
     }
 
     .fa-home{
