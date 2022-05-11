@@ -47,7 +47,7 @@ getNewQuestion = () =>{
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]
-    console.log(currentQuestion);
+    // console.log(currentQuestion);
     question.innerHTML = currentQuestion.question
 
     ANSWERINDEX = Math.floor(Math.random() * currentQuestion.incorrect_answers.length)
