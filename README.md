@@ -1,4 +1,10 @@
 # JavaScript quiz-appp
+## About the Project
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (Vanila)
 
 ## UI
 
@@ -9,3 +15,5 @@
 
 ## Live Demo
 https://ethel-quizapp.netlify.app/
+
+## Personal Comments
