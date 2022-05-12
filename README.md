@@ -1,6 +1,7 @@
 # JavaScript quiz-appp
 ## About the Project
-
+This ia an online Quiz Application. It gives users multiple choice questions to select an answer. 
+The questions are answered in a linear form, hence you can't navigate to the previous question. It automatically moves to next question once user selects an answer
 ## Technologies Used
 - HTML
 - CSS
