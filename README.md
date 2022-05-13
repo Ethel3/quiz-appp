@@ -2,6 +2,8 @@
 ## About the Project
 This ia an online Quiz Application. It gives users multiple choice questions to select an answer. 
 The questions are answered in a linear form, hence you can't navigate to the previous question. It automatically moves to next question once user selects an answer
+##My Personal Experience about this project
+I started this Quiz Application with my own coded questions, until I was taught how to use the web API from the open tivia questions to complete this Quiz Application.
 ## Technologies Used
 - HTML
 - CSS
