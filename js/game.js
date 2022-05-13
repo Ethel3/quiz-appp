@@ -12,8 +12,8 @@ let questionCounter = 0
 let availableQuestions = {}
 
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 10
+const SCORE_POINTS = 50
+const MAX_QUESTIONS = 20
 let ANSWERINDEX = 0
 
 
