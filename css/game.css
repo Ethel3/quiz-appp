@@ -75,3 +75,21 @@ body{
 #question {
     font-size: 25px;
 }
+
+.preloader{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #fff;
+    border-top: 10px solid orangered;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
