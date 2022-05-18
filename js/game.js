@@ -5,6 +5,7 @@ const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
 const game = document.getElementById("game");
 const preloader = document.getElementById("preloader");
+const question_progress = document.getElementById("question_progress");
 // console.log(progressBarFull);
 
 let currentQuestion = {}
@@ -71,6 +72,8 @@ getNewQuestion = () =>{
     availableQuestions.splice(questionIndex, 1)
 
     acceptingAnswers = true
+    
+    question_progress.innerHTML = `${questionCounter} / ${MAX_QUESTIONS}`
 }
 // console.log(choices[0]);
 for (let i = 0; i < choices.length; i++) {
