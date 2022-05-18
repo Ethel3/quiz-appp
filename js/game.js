@@ -50,7 +50,7 @@ getNewQuestion = () =>{
         return window.location.assign('/end.html')
         
     }
-
+    question_progress.innerHTML = `${questionCounter} / ${MAX_QUESTIONS}`
     questionCounter++
     progressText.InnerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
@@ -72,8 +72,8 @@ getNewQuestion = () =>{
     availableQuestions.splice(questionIndex, 1)
 
     acceptingAnswers = true
-    
-    question_progress.innerHTML = `${questionCounter} / ${MAX_QUESTIONS}`
+
+
 }
 // console.log(choices[0]);
 for (let i = 0; i < choices.length; i++) {
