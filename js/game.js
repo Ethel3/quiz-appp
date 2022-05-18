@@ -3,6 +3,8 @@ const choices = document.getElementsByClassName("choice-text");
 const progressText = document.getElementById("progressText");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progressBarFull");
+const game = document.getElementById("game");
+const preloader = document.getElementById("preloader");
 // console.log(progressBarFull);
 
 let currentQuestion = {}
@@ -11,6 +13,8 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = {}
 
+const SOUNDCORRECT = new Audio("../sounds/sound_correct.mp3");
+const SOUNDINCORRECT = new Audio("../sounds/sound_incorrect.mp3");
 
 const SCORE_POINTS = 50
 const MAX_QUESTIONS = 20
@@ -21,7 +25,12 @@ const fetchQuestions = async (num) => {
     url = `https://opentdb.com/api.php?amount=${num}&category=9&difficulty=hard&type=multiple`
     let response = await fetch(url);
     let data = await response.json()
+
+    // show game
+    game.classList.remove('hidden')
+    preloader.classList.add('hidden')
     return data.results
+
 }
 startGame = async() => {
     let questions = await fetchQuestions(500)
@@ -79,6 +88,9 @@ for (let i = 0; i < choices.length; i++) {
  
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
+            SOUNDCORRECT.play()
+        }else{
+            SOUNDINCORRECT.play()
         }
  
         selectedChoice.parentElement.classList.add(classToApply)
