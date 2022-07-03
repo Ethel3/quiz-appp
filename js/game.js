@@ -17,8 +17,8 @@ let availableQuestions = {}
 const SOUNDCORRECT = new Audio("../sounds/sound_correct.mp3");
 const SOUNDINCORRECT = new Audio("../sounds/sound_incorrect.mp3");
 
-const SCORE_POINTS = 50
-const MAX_QUESTIONS = 20
+const SCORE_POINTS = 100
+const MAX_QUESTIONS = 15
 let ANSWERINDEX = 0
 
 
