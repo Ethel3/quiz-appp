@@ -9,7 +9,7 @@ I started this Quiz Application with my own coded questions, until I was taught 
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript (Vanila)
+- JavaScript (Vanilla)
 
 ## UI
 
